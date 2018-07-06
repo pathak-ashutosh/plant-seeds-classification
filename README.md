@@ -8,7 +8,7 @@ The Aarhus University Signal Processing group, in collaboration with University 
 _This project is one of my very first projects on Machine Learning. What I've done here is, I took Kaggle's ["Plant seedlings classification" dataset](https://www.kaggle.com/c/plant-seedlings-classification/data) and used [mxnet](https://mxnet.apache.org/) framework on a [pre-trained resnet-50 model](http://data.mxnet.io/mxnet/models/imagenet-11k-place365-ch/) to get highest possible performance in least possible (dev) time._
 
 ## About the data
-You are provided with a training set and a test set of images of plant seedlings at various stages of grown. Each image has a filename that is its unique id. The dataset comprises 12 plant species. The goal is to create a classifier capable of determining a plant's species from a photo. The list of species is as follows:
+You are provided with a training set and a test set of images of plant seedlings at various stages of growth. Each image has a filename that is its unique id. The dataset comprises 12 plant species. The goal is to create a classifier capable of determining a plant's species from a photo. The list of species is as follows:
 
 ```
 Black-grass
