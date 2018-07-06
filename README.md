@@ -44,10 +44,10 @@ Sugar beet
 * Open the terminal/command prompt and cd to the 'plant-seeds-classification' directory.
 * From your terminal, run the following
 ```
-python <path_where_im2rec.py_is_present> --list --recursive train-lst data/train/
-python <path_where_im2rec.py_is_present> --list --recursive test-lst data/test/
-python <path_where_im2rec.py_is_present> --resize 256 --quality 90 --num-thread 16 test-lst data/test/
-python <path_where_im2rec.py_is_present> --resize 256 --quality 90 --num-thread 16 train-lst data/train/
+python im2rec.py --list --recursive train-lst data/train/
+python im2rec.py --list --recursive test-lst data/test/
+python im2rec.py --resize 256 --quality 100 --num-thread 16 test-lst data/test/
+python im2rec.py --resize 256 --quality 100 --num-thread 16 train-lst data/train/
 ```
 (This will create two list files and two rec files, one for both train data and test data)
 * After running these commands successfully, open the .ipynb file using jupyter notebook and run the cells.
