@@ -26,6 +26,25 @@ Sugar beet
 ```
 
 ## Setting-up
-### What you need:
-* A PC\notebook having a good GPU (cloud GPUs will also do)
-* 
+### Setting directories
+* Clone/download this repository.
+* Make a 'data/' folder in the 'plant-seeds-classification/' folder.
+* Open the data/ folder and make two more folders - 'train/' and 'test/'.
+* Download the dataset from [here](https://www.kaggle.com/c/plant-seedlings-classification/data).
+* Extract both train.zip and test.zip into their respective folders which we made above.
+* Download the resnet-50 model along with it's symbols file from [here](http://data.mxnet.io/mxnet/models/imagenet-11k-place365-ch/) (this can work with any model, but you'll have to change some things in the .ipynb notebook).
+* Save the model in the 'plant-seeds-classification/' folder.
+
+### Packages required:
+* OpenCV
+* TensorFlow
+* mxnet
+
+### Installation:
+* From your terminal, run the following
+```
+python <path_where_im2rec.py_is_present> --list --recursive train-lst data/train/
+python <path_where_im2rec.py_is_present> --list --recursive test-lst data/test/
+python <path_where_im2rec.py_is_present> --resize 256 --quality 90 --num-thread 16 test-lst data/test/
+python <path_where_im2rec.py_is_present> --resize 256 --quality 90 --num-thread 16 train-lst data/train/
+```
