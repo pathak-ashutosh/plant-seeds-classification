@@ -28,12 +28,12 @@ Sugar beet
 ## Setting-up
 ### Setting directories
 * Clone/download this repository.
-* Make a 'data/' folder in the 'plant-seeds-classification/' folder.
-* Open the data/ folder and make two more folders - 'train/' and 'test/'.
+* Make a 'data' folder in the 'plant-seeds-classification' folder.
+* Open the data folder and make two more folders - 'train' and 'test'.
 * Download the dataset from [here](https://www.kaggle.com/c/plant-seedlings-classification/data).
 * Extract both train.zip and test.zip into their respective folders which we made above.
 * Download the resnet-50 model along with it's symbols file from [here](http://data.mxnet.io/mxnet/models/imagenet-11k-place365-ch/) (this can work with any model, but you'll have to change some things in the .ipynb notebook).
-* Save the model in the 'plant-seeds-classification/' folder.
+* Save the model in 'plant-seeds-classification' folder.
 
 ### Packages required:
 * OpenCV
@@ -41,10 +41,38 @@ Sugar beet
 * mxnet
 
 ### Installation:
+* Open the terminal/command prompt and cd to the 'plant-seeds-classification' directory.
 * From your terminal, run the following
 ```
 python <path_where_im2rec.py_is_present> --list --recursive train-lst data/train/
 python <path_where_im2rec.py_is_present> --list --recursive test-lst data/test/
 python <path_where_im2rec.py_is_present> --resize 256 --quality 90 --num-thread 16 test-lst data/test/
 python <path_where_im2rec.py_is_present> --resize 256 --quality 90 --num-thread 16 train-lst data/train/
+```
+(This will create two list files and two rec files, one for both train data and test data)
+* After running these commands successfully, open the .ipynb file using jupyter notebook and run the cells.
+
+## LICENCE
+```
+MIT License
+
+Copyright (c) 2018 Ashutosh Pathak
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
