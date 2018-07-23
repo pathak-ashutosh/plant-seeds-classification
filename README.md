@@ -32,7 +32,7 @@ Sugar beet
 * Open the data folder and make two more folders - 'train' and 'test'.
 * Download the dataset from [here](https://www.kaggle.com/c/plant-seedlings-classification/data).
 * Extract both train.zip and test.zip into their respective folders which we made above.
-* Download the resnet-50 model along with it's symbols file from [here](http://data.mxnet.io/mxnet/models/imagenet-11k-place365-ch/) (this can work with any model, but you'll have to change some things in the .ipynb notebook).
+* Download the resnet-50 model along with it's symbols file from [here](http://data.mxnet.io/mxnet/models/imagenet-11k-place365-ch/) (this can work with any model, not just resnet, but you'll have to change some things in the jupyter notebook accordingly).
 * Save the model in 'plant-seeds-classification' folder.
 
 ### Packages required:
@@ -52,4 +52,6 @@ python im2rec.py --resize 256 --quality 100 --num-thread 16 train-lst data/train
 (This will create two list files and two rec files, one for both train data and test data)
 * After running these commands successfully, open the .ipynb file using jupyter notebook and run the cells.
 
-##### This project is licenced under the MIT Licence - see the LICENCE.md file for details
+##### This project is licenced under the MIT Licence - see the [LICENCE](https://github.com/m3rc3n4ry/plant-seeds-classification/blob/master/LICENSE) file for more details.
+
+If you find some problem running this model, feel free to raise an issue.
